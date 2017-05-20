@@ -72,4 +72,5 @@
 [JavaScript 深入之从 ECMAScript 规范解读 this](http://t.cn/RamCVIR)
 
 [Getting Started With The JavaScript Web Animation API](http://t.cn/RamCfza)
+
 日报首发于-->https://segmentfault.com/a/1190000009487513
