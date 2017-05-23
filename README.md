@@ -52,6 +52,30 @@
 
 ---
 
+### 2017-05-20 前端日报
+
+[Javascript30挑战](http://t.cn/RamCGZk)
+
+[User Facing State](http://t.cn/RamCGBw)
+
+[奇舞周刊第 210 期](http://t.cn/RamCqCa)
+
+[如何实现一个 Git Diff 解析器](http://t.cn/RaEHM0m)
+
+[【前端推荐第15天】浏览器幕后揭秘](http://t.cn/RamC5e6)
+
+[工作五年，后面四年重复着第一年的活儿？](http://t.cn/RamCt0y)
+
+[HTML5 进阶系列：拖放 API 实现拖放排序](http://t.cn/RamCcpe)
+
+[JavaScript 深入之从 ECMAScript 规范解读 this](http://t.cn/RamCVIR)
+
+[Getting Started With The JavaScript Web Animation API](http://t.cn/RamCfza)
+
+日报首发于-->https://segmentfault.com/a/1190000009487513
+
+---
+
 ### 2017-05-22 前端日报
 
 [腾讯前端大会热力来袭](http://t.cn/RanCb47)
@@ -67,3 +91,5 @@
 [HTML<head> 速查表](http://t.cn/Rau9kWZ)
 
 [Build Yourself a Redux](http://t.cn/RXmOuwg)
+
+---
