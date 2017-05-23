@@ -49,3 +49,21 @@
 [几张图让你看懂WebAssembly](http://t.cn/RaEZBOH )
 
 [从0到1搭建webpack2+vue2自定义模板详细教程](http://t.cn/RaQ9VyA)
+
+---
+
+### 2017-05-22 前端日报
+
+[腾讯前端大会热力来袭](http://t.cn/RanCb47)
+
+[VueConf全部PPT开放下载,点击绿色标题下载](http://t.cn/Ra101XG)
+
+[JavaScript编码风格的要素](http://t.cn/RarEgKc)
+
+[百度外卖前端技术周刊](http://t.cn/RarEDlV)
+
+[【墙】React欧洲大会视频](http://t.cn/RarnhPM)
+
+[HTML<head> 速查表](http://t.cn/Rau9kWZ)
+
+[Build Yourself a Redux](http://t.cn/RXmOuwg)
