@@ -95,6 +95,7 @@
 ---
 
 ### 2017-05-24 前端日报
+
 [2017 Web开发技术路线图](http://t.cn/RagcgFh)
 
 [是时候使用CSS自定义属性了](http://t.cn/RaW1Usn)
@@ -108,5 +109,23 @@
 [React Forms: Using Refs](http://t.cn/RaFv659)
 
 What I’ve learned from React Europe 2017【墙】: http://t.cn/RaFvXdw
+
+---
+
+### 2017-05-25 前端日报
+
+[搜车 React Native 依赖管理方案](http://t.cn/RSvVMe5)
+
+[React Native 持续部署](http://t.cn/RSvnlBT)
+
+[VueConf尤雨溪演讲视频](http://t.cn/RSvnQAI)
+
+[Redux状态管理之痛点、分析与改良](http://t.cn/RaF3VO5)
+
+[The Tools of an HTML Email Workflow](http://t.cn/RSvnm2F)
+
+[ECMAScript modules in browsers](http://t.cn/RSvn3MB)
+
+The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 
 ---
