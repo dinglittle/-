@@ -75,6 +75,23 @@
 日报首发于-->https://segmentfault.com/a/1190000009487513
 
 ---
+### 2017-05-21 前端日报
+
+[精读入坑React前没有人会告诉你的事](https://zhuanlan.zhihu.com/p/27014764)
+
+[VueConf 大会现场笔记](https://juejin.im/post/591fa2d0a0bb9f005f3ccd1b)
+
+[墙-JSConf EU 2017视频](https://www.youtube.com/playlist?list=PL37ZVnwpeshFmAPr65sU2O5WMs7_CGjs_#jsconfeu2017)
+
+[Writing modern JavaScript code](https://dev.to/scastiel/writing-modern-javascript-code)
+
+[图说 WebAssembly](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ%3D%3D&mid=2651226518&idx=1&sn=db1248e5ba9694add10fc1e922f0ca95#wechat_redirect)
+
+[GraphQL 的庐山真面目](https://mp.weixin.qq.com/s?__biz=MzA4NjE3MDg4OQ%3D%3D&mid=2650964572&idx=1&sn=f102ff3e669267692e27702f27ba3be7#wechat_redirect)
+
+[Alloy周刊第6期](https://mp.weixin.qq.com/s?__biz=MjM5MTY2NTIyMA%3D%3D&mid=2648997903&idx=1&sn=808f8b4794f996d7dc966943a716bbf0#wechat_redirect)
+
+---
 
 ### 2017-05-22 前端日报
 
@@ -91,6 +108,29 @@
 [HTML<head> 速查表](http://t.cn/Rau9kWZ)
 
 [Build Yourself a Redux](http://t.cn/RXmOuwg)
+
+---
+
+### 2017-05-23 前端日报
+
+[FEX技术周刊](https://mp.weixin.qq.com/s?__biz=MjM5NDgzMjMzMQ%3D%3D&mid=2651069539&idx=1&sn=a76afee709bdc2ebbf1118978e12a1a4#wechat_redirect)
+
+[JS与面向对象](http://www.renfed.com/2017/05/21/js-oop/)
+
+[Vue 的单元测试探索](https://zhuanlan.zhihu.com/p/26796206)
+
+[浅谈2017技术趋势-英-](https://hackernoon.com/10-hallway-conversations-in-2017-about-web-development-6db77ade3c18)
+
+[-前端之巅-前端每周清单](https://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&mid=2247485206&idx=1&sn=df30a3e2e2463721c4665e4d123fa1f2)
+
+[从零开始用 proxy 实现 Mobx](https://juejin.im/post/59224a4da22b9d005884c9a3)
+
+[JavaScript中的递归、PTC、TCO和STC](http://www.zcfy.cc/article/all-about-recursion-ptc-tco-and-stc-in-javascript-2813.html)
+
+[实现一个属于我们自己的简易MVVM库](https://zhuanlan.zhihu.com/p/27028242)
+
+[【MDN】Concurrency model and Event Loop](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
+
 
 ---
 
@@ -127,5 +167,23 @@ What I’ve learned from React Europe 2017【墙】: http://t.cn/RaFvXdw
 [ECMAScript modules in browsers](http://t.cn/RSvn3MB)
 
 The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
+
+---
+
+### 2017-05-26 前端日报
+
+[文章汇总-5月份React十佳文章-英-](http://t.cn/RS7X46I)
+
+[造轮子-从零开始用 proxy 实现 Mobx](http://t.cn/RSPnlGB)
+
+[大会资料-Vue SSR和API Proxy层深度实践](http://t.cn/RS7Xq9X)
+
+[优化/React-Code Splitting in Create React App](http://t.cn/RS7XtUH)
+
+[调试工具-What's New In DevTools : Chrome 60-墙-](http://t.cn/RS7XItz)
+
+[JS进阶-用JavaScript解释JavaScript虚拟机-内联缓存](http://t.cn/RSPbt4c)
+
+[NodeJs-如何 Hack 一个存在安全漏洞的 Node.js 应用程序](http://t.cn/RS7aLAL)
 
 ---
