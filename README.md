@@ -187,3 +187,23 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [NodeJs-如何 Hack 一个存在安全漏洞的 Node.js 应用程序](http://t.cn/RS7aLAL)
 
 ---
+
+### 2017-05-27 前端日报
+
+[浏览器渲染-深入浅出浏览器渲染原理](http://t.cn/RSZf5Cd)
+
+[JS高级-深入理解JavaScript错误与调用栈](http://t.cn/RSZfVDI)
+
+[JS高级-总是一知半解的Event Loop](http://t.cn/RSZfxOw)
+
+[源码解析-underscore源码解析](http://t.cn/RSZfXZk)
+
+[Canvas技巧-canvas 图像旋转与翻转姿势解锁](http://t.cn/RS7miEC)
+
+[JS高级JavaScript深入系列](http://t.cn/RSZfOA5)
+
+[测试框架]JavaScript 单元测试框架横向比较【英】: http://t.cn/RSZfCw4
+
+[重磅更新]npm 5 发布！: http://t.cn/RSzMAgR
+
+---
