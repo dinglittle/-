@@ -202,8 +202,8 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 
 [JS高级JavaScript深入系列](http://t.cn/RSZfOA5)
 
-[测试框架]JavaScript 单元测试框架横向比较【英】: http://t.cn/RSZfCw4
+[测试框架-JavaScript 单元测试框架横向比较(英)](http://t.cn/RSZfCw4)
 
-[重磅更新]npm 5 发布！: http://t.cn/RSzMAgR
+[重磅更新-npm 5 发布!](http://t.cn/RSzMAgR)
 
 ---
