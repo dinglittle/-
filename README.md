@@ -207,3 +207,21 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [重磅更新-npm 5 发布!](http://t.cn/RSzMAgR)
 
 ---
+
+### 2017-05-28 前端日报
+
+[源码解析-精读 Immutable 结构共享](http://t.cn/RSZFoDK)
+
+[技术教程-Server-Sent Events 教程](http://t.cn/RSwFnxT)
+
+[CSS进阶-原生CSS六个不容小觑的新增功能](http://t.cn/RS2HVkh)
+
+[大会资料-掘金 Vue.js 2.0 后端渲染及重构实践(视频)](http://t.cn/RS2Hf9A)
+
+[训练教程-函数式编程训练教材(英)](http://t.cn/RUYqMJf)
+
+[PWA-Production Progressive Web Apps with JavaScript Frameworks](http://t.cn/RS2HMPo)
+
+[新兴项目-人工智能自动根据像素图转代码](http://t.cn/RShTl4N)
+
+---
