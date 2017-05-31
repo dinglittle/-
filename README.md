@@ -225,3 +225,21 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [新兴项目-人工智能自动根据像素图转代码](http://t.cn/RShTl4N)
 
 ---
+
+### 2017-05-29 前端日报
+
+[文章整理-前端周刊](http://t.cn/RSUjRXg)
+
+[性能优化光速React](http://t.cn/RSyoniD)
+
+[代码风格-JavaScript 编码指南](http://t.cn/RSUjnJq)
+
+[大会资料-Vue.js在饿了么的应用](http://t.cn/RSUjmLb)
+
+[JS进阶-JavaScript函数的多种写法](http://t.cn/RSUjuHe)
+
+[JS进阶-JavaScript 深入之new的模拟实现](http://t.cn/RSygUV2)
+
+[CSS进阶-CSS3 3D 行星运转动画 + 浏览器渲染原理](http://t.cn/RSydMEk)
+
+---
