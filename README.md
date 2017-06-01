@@ -279,3 +279,21 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [横向比较-Best JavaScript Frameworks, Libraries and Tools to use in 2017](http://t.cn/RSt0QbK)
 
 ---
+
+### 2017-06-01 前端日报
+
+[FEX 技术周刊](http://t.cn/RSftcHU)
+
+[Airbnb 的前端重构](http://t.cn/RSceTbW)
+
+[Javascript 模块现状](http://t.cn/RSfLlk2)
+
+[WebAssembly系列文章](http://t.cn/RSftMK0)
+
+[初探 Headless Chrome](http://t.cn/RScVGXN)
+
+[前端每周清单：Node.js v8.0发布](http://t.cn/RScQdAn)
+
+[破解前端面试系列（3）：如何搞定纸上代码环节?](http://t.cn/RSftXqy)
+
+---
