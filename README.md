@@ -297,3 +297,23 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [破解前端面试系列（3）：如何搞定纸上代码环节?](http://t.cn/RSftXqy)
 
 ---
+
+### 2017-06-02 前端日报
+
+[Vue.js 作者尤雨溪专访](http://t.cn/RSM1zhs)
+
+[尝鲜异步迭代器和生成器](http://t.cn/RSI4v2W)
+
+[CSS即将具备的6种处理器特性](http://t.cn/RSMDIbh)
+
+[前端leader们如何安排面试](http://t.cn/RSMDxNO)
+
+[尤雨溪的 Live 说了哪些技术名词？（上篇）](http://t.cn/RSILEH2)
+
+[浅析前端开发中的 MVC/MVP/MVVM 模式](http://t.cn/RSMD6yL)
+
+[Leveraging the Performance Metrics that Most Affect User Experience-墙-]( http://t.cn/RSMDXa6)
+
+[Build a Style Guide Straight from Sass](http://t.cn/RSMDS5t)
+
+---
