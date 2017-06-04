@@ -337,5 +337,22 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 
 ---
 
+# 2017-06-04 前端日报
+
+[使用浏览器开发者工具检测CSS动画性能](http://t.cn/RSa0V3X)
+
+[前端周刊第58期--送你 3 道面试题](http://t.cn/RSXjvEf)
+
+[V8 JavaScript 引擎--高性能的 ES2015+](http://t.cn/RS6HPZc)
+
+[webpack原理与实战](http://t.cn/RSa0JAN)
+
+[如何用Vue构建大型单页面应用](http://t.cn/RSa0imQ)
+
+[Upgrading from Node 6 to Node 8: a real-world performance comparison](http://t.cn/RSa0Xxm)
+
+[Node.js 8--util.promisify](http://t.cn/RSMBJPS)
+
+---
 
 
