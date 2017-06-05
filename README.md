@@ -355,4 +355,21 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 
 ---
 
+# 2017-06-05 前端日报
+
+[精读《Web Components 的困境》](http://t.cn/RSKAX19)
+
+[-webkit-text-stroke文字描边CSS属性及展开](http://t.cn/RSofa8M)
+
+[读Zepto源码之操作DOM](http://t.cn/RSKGOHi)
+
+[我眼中的前端九段](http://t.cn/RS6SXbu)
+
+[从前端开发看面向未来的敏捷学习法](http://t.cn/RSKGjHO)
+
+[N-API: Next generation Node.js APIs for native modules](http://t.cn/RSJ57EP)
+
+[graphql-tools: A simpler way to create GraphQL APIs](http://t.cn/RSKGHT3)
+
+---
 
