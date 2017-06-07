@@ -392,3 +392,23 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [JSC 💕 ES6 | WebKit](http://t.cn/RSNZ2MF)
 
 ---
+
+# 2017-06-07 前端日报
+
+[程序员英语提升指南](http://t.cn/RSpWtiR)
+
+[深入理解 Node Stream 内部机制](http://t.cn/RS0YJp6)
+
+[ES6 modules 即将到来，现在该考虑新的打包方案了嘛？](http://t.cn/RS0bhHD)
+
+[JS 冻结对象的《人间词话》 完美实现究竟有几层境界？](http://t.cn/RSOLTgW)
+
+[关于响应式的另一种思考](http://t.cn/RSpK7zg)
+
+[Best websites a programmer should visit](http://t.cn/RSpYQRr)
+
+[An intro to web components with otters](http://t.cn/RSOLE7n)
+
+[WebKit has a full WebAssembly implementation now](http://t.cn/RSO74kv)
+
+---
