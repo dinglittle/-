@@ -412,3 +412,23 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [WebKit has a full WebAssembly implementation now](http://t.cn/RSO74kv)
 
 ---
+
+# 2017-06-08 前端日报
+
+[Babel是如何读懂JS代码的](http://t.cn/RSlrAtl)
+
+[\译\简编漫画介绍WebAssembly](http://t.cn/RSUpmbs)
+
+[使用 Gradle 做构建检查](http://t.cn/RSlrbYG)
+
+[收藏指数满格！帮你打包前端之巅一整年好文](http://t.cn/RSOfGBa)
+
+[深入比较选择 Angular 还是 React](http://t.cn/RSlr5lP)
+
+[JavaScript’s new #private class fields](http://t.cn/RSlOTHY)
+
+[Introducing FilterBubbler: A WebExtension built using React/Redux](http://t.cn/RSlb3pV)
+
+[前端日报GitHub地址](http://t.cn/RSldJVK)
+
+---
