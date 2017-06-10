@@ -412,6 +412,47 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 [WebKit has a full WebAssembly implementation now](http://t.cn/RSO74kv)
 
 ---
+
+# 2017-06-08 前端日报
+
+[Babel是如何读懂JS代码的](http://t.cn/RSlrAtl)
+
+[\译\简编漫画介绍WebAssembly](http://t.cn/RSUpmbs)
+
+[使用 Gradle 做构建检查](http://t.cn/RSlrbYG)
+
+[收藏指数满格！帮你打包前端之巅一整年好文](http://t.cn/RSOfGBa)
+
+[深入比较选择 Angular 还是 React](http://t.cn/RSlr5lP)
+
+[JavaScript’s new #private class fields](http://t.cn/RSlOTHY)
+
+[Introducing FilterBubbler: A WebExtension built using React/Redux](http://t.cn/RSlb3pV)
+
+[前端日报GitHub地址](http://t.cn/RSldJVK)
+
+---
+
+# 2017-06-09 前端日报
+
+[TCP 协议简介](http://t.cn/RSjBleS)
+
+[JavaScript 的新特性：类的 #private 字段](http://t.cn/RSTY8Z9)
+
+[Symbol Polyfill 填坑之旅](http://t.cn/RSj0BBr)
+
+[前端异常监控平台的设计思路及实现](http://t.cn/RSTYEgh)
+
+[QQ会员基于hybrid的高质量H5架构实践](http://t.cn/RSTYmVG)
+
+[Functional Mixins](http://t.cn/RSTSZDO)
+
+[Node.js Child Processes: Everything you need to know](http://t.cn/RSTY31T)
+
+前端日报GitHub地址: http://t.cn/RSTYBas
+
+---
+
 # 2017-06-10 前端日报
 
 [不会做动画的前端不是好开发](http://t.cn/RS8057G)
@@ -431,4 +472,5 @@ The state of JavaScript modules【墙】:http://t.cn/RSvnBtw
 GitHub地址: http://t.cn/RS80IR4
 
 ---
+
 
