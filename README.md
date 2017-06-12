@@ -473,4 +473,20 @@ GitHub地址: http://t.cn/RS80IR4
 
 ---
 
+# 2017-06-11 前端日报
+
+[精读前端调试技巧](http://t.cn/RS8EEQr)
+
+[CSS 揭秘笔记](http://t.cn/RSRVnuS)
+
+[利用HTML5 Web Audio API给网页JS交互增加声音](http://t.cn/RSE3tLB)
+
+[后 ES6 时代的正则匹配](http://t.cn/RSnZ9Ev)
+
+[三年来，从未如此随性](http://t.cn/RSnZ9RC)
+
+[Reducing our Redux code with React Apollo](http://t.cn/RSnZ9RR)
+
+[Introduction to the Budget API](http://t.cn/RSnZ9RK)
+
 
