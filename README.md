@@ -489,4 +489,22 @@ GitHub地址: http://t.cn/RS80IR4
 
 [Introduction to the Budget API](http://t.cn/RSnZ9RK)
 
+---
 
+# 2017-06-12 前端日报
+
+[V8发布6.0版](http://t.cn/RSukf2c)
+
+[理解 JavaScript 作用域](http://t.cn/RSmIBGJ)
+
+[Angular4 实战开发 - 腾讯Web前端](http://t.cn/RSukf2C)
+
+[编写模块化的CSS（第二部分）—命名空间](http://t.cn/RSukf2N)
+
+[前端与SQL – 人人网FED](http://t.cn/RSm4X02)
+
+[编程热情的维系 - Phodal](http://t.cn/RSu84YU)
+
+[Server Side Rendering with Prefetch](http://t.cn/RSukf2X)
+
+订阅前端日报: http://t.cn/RSTe7dC
