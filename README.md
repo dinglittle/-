@@ -508,3 +508,23 @@ GitHub地址: http://t.cn/RS80IR4
 [Server Side Rendering with Prefetch](http://t.cn/RSukf2X)
 
 订阅前端日报: http://t.cn/RSTe7dC
+
+---
+
+2017-06-13 前端日报
+
+[ESLint v4.0.0 发布](http://t.cn/RSrzul4)
+
+[前端团队 Gulp & Webpack 工作流 迁移记](http://t.cn/RSrzul7)
+
+[Async 模块实现入门浅析](http://t.cn/RS3i8el)
+
+[【译】JS新语法：私有属性](http://t.cn/RSrzuWG)
+
+[前端每周清单 - 前端之巅](http://t.cn/RSrzuWq)
+
+[A Complete Guide To Switching From HTTP To HTTPS](http://t.cn/RS10mLC)
+
+[Why I Chose React Over Vue](http://t.cn/RSBjImk)
+
+订阅前端日报: http://t.cn/RSTe7dC
