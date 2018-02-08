@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS中一些利用伪类、伪元素和相邻元素选择器的技巧</title>
+    <meta name="name" content="content" charset="utf-8">
+    <!-- http://www.codeceo.com/article/some-css-tips.html -->
+    <style>
+    .first {
+        width: 400px;
+        height: 400px;
+    }
+
+    .first .input,
+    .first .like,
+    .first .send {
+        float: left;
+    }
+
+    .first .send {
+        display: none;
+    }
+
+    .first .input:focus~.send {
+        display: block;
+    }
+
+    .first .input:valid~.send {
+        display: block;
+        color: red;
+    }
+
+    .first .input:focus~.like,
+    .first .input:valid~.like {
+        display: none;
+    }
+
+    .first .input:empty:before {
+        content: attr(placeholder);
+    }
+    /*伪类和伪元素*/
+    /*未访问过的超链接 link*/
+
+    .second .link:link {
+        color: red;
+    }
+    /*访问过的超链接 visited*/
+
+    .second .visited:visited {
+        color: #ccc;
+    }
+    /*hover 样式*/
+
+    .second .hover:hover {
+        color: yellow;
+    }
+    /*active 用于被激活的链接 按钮等*/
+
+    .second .active:active {
+        color: #ccc;
+    }
+    /* focus 用于拥有键盘输入焦点的元素*/
+
+    .second .input-focus:focus {
+        background: red;
+        color: yellow;
+    }
+    /* focus 更改 显示 */
+
+    .second .div-focus:focus {
+        background: yellow;
+        color: red;
+    }
+    /* 将 div 变成 input 一样可显示 placeholder */
+
+    .second .div-focus:empty:before {
+        content: attr(placeholder);
+    }
+    /* first-child 第一次出现*/
+
+    .second .first-show {
+        width: 200px;
+        height: 50px;
+    }
+
+    .second .first-show li:first-child {
+        border: 1px solid;
+        background: green;
+    }
+    /* 伪元素 */
+    /* first-lette  内容的第一个字 */
+
+    .third .first-letter::first-letter {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /* first-letter 内容的第一行 */
+
+    .third .first-line::first-line {
+        color: red;
+    }
+    /* before 内容的前面 */
+
+    .third .before::before {
+        content: 'before';
+    }
+    /* after 内容的后面 */
+
+    .third .after::after {
+        content: 'after';
+    }
+    /* placeholder 用于控制表彰输入框点位符的外观,它允许开发者/设计师改变文字点位符的样式,默认的文字点位符为浅灰色*/
+
+    .third .placeholder::-webkit-input-placeholder {
+        color: red;
+    }
+    /* 清除浮动 */
+
+    .clearfix::before,
+    .clearfix::after {
+        content: '';
+        display: table;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <!-- 
+			一个评论框,后面的按钮有点赞或者发送评论两种状态,其中发送按钮有根据输入框中是否有字分为可点击和不可点击两种状态.
+
+			需求:
+				没有文字,没有聚焦 - 点赞
+				没有文字,聚焦 - 灰色发送
+				有文字 - 红色发送
+
+				如果用JS实现,需要监听输入框的change和focus事件,比较麻烦.
+				但是用CSS中的伪类就可以实现相近效果.
+		 -->
+        <input type="text" class="input" required>
+        <div class="like">点赞</div>
+        <div class="send">发送</div>
+        <!-- 
+		 	contenteditable 属性的 div 的 placeholder
+
+		 	因为一些原因,我们有时候用带有 contenteditable 属性的 div 而不是 input 或者  textarea 来作为输入框. 
+		 	比如, div 可以根据内容自动调整高度. 
+		 	但是 div 元素不支持 placeholder 属性. 
+		 	怎么在 div 内容为空的时候显示一个默认文字呢? 可以利用 :empty 伪类
+		  -->
+        </br>
+        <div class="input" contenteditable placeholder="请输入文字"></div>
+    </div>
+    <div class="second">
+        <!-- 伪类是 基于当年元素处于的状态,或者说元素当前所具有的特性 -->
+        <p>伪类</p>
+        <a href="#" class="link">link</a>
+        <br>
+        <a href="#" class="visited">visited</a>
+        <br>
+        <a href="#" class="hover">hover</a>
+        <br>
+        <a href="#" class="active">active</a>
+        <br>
+        <input type="" name="" placeholder="focus" class="input-focus">
+        <br>
+        <div class="div-focus" contenteditable placeholder="focus">focus内容</div>
+        <div class="div-focus" contenteditable placeholder="focus-placeholder"></div>
+        <br>
+        <ul class="first-show">
+            <li>第一次出现</li>
+        </ul>
+    </div>
+    <div class="third">
+        <p>伪元素</p>
+        <!-- 是指某个特定的元素 , 第一个字 第一行 某些内容的前面/后面 等 伪类选择器无法完成的工作-->
+        <!-- ::first-letter -->
+        <!-- 伪元素的第一个字母 -->
+        <div class="first-letter">
+            这里是测试first-letter的
+        </div>
+        <!-- 伪元素的第一行 -->
+        <div class="first-line">
+            <p>我是第一行</p>
+            <p>我是第二行</p>
+            <p>我是第三行</p>
+        </div>
+        <!-- ::before 在内容之前 -->
+        <div class="before">
+            在内容之前
+        </div>
+        <!-- ::after 在内容之后 -->
+        <div class="after">
+            在内容之后
+        </div>
+        <input type="" name="" class="placeholder" placeholder="placeholder">
+    </div>
+    <!-- 画格子 -->
+    <!-- 
+    	美团 移动端页面 
+
+    	我们需要在城市列表这个区域画一个格子, 我们当然首先想到的是用 border 属性,但是设计师有个要求是, 如果最后一行只有一个或者两个城市, 为了美观后面也要有空白的格子
+    -->
+    <!-- 
+    	美团的页面中, 格子的竖线 用 ::after 和 ::before 元素画
+     -->
+    <!-- table 插入 位置 -->
+
+
+    <script>
+    var citys = ['北京', '上海', '广州', '深圳', '天津', '西安', '重庆', '杭州', '南京', '武汉'];
+    window.onload = function(){
+    	// getElementsByTagName() 方法返回元素的顺序是它们在文档中的顺序。
+        // var  = document.getElementsByTagName('table');
+        let tempTable = document.createElement('table');
+        console.log(tempTable)
+
+        for(let i =0;i<citys.length;i++){
+        	// 先创建 tr
+        	let tempTr = document.createElement('tr');
+        	// 0 1 2 3
+        	if((i+1)%4==0) {
+        		// 每行 append 一次
+		        tempTable.appendChild(tempTr);
+        	}
+	        let tempTd = document.createElement('td');
+	        tempTd.innerText = citys[i];
+	        tempTr.appendChild(tempTd);
+        }
+        let body = document.getElementsByTagName('body')[0];
+        body.appendChild('tempTable')
+
+
+    }
+    </script>
+</body>
+
+</html>

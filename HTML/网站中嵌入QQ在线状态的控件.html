@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>网站中插入QQ在线状态的控件</title>
+    <meta charset="utf-8" content="content">
+</head>
+
+<body>
+    <!-- 
+		一: 完成公开代码样式
+		1) unin为用户 QQ 号码,可以根据自己的QQ改变
+		2) 临时会话图标 http://wpa.qq.com/pa?p=2:459378261:41
+			src是图标链接,自定义图标可中可以替换这一部分为自己图片的链接,
+			参数:
+				P=以冒号":"分隔多个参数
+				第一个参数为版本号,目前未1;
+				第二个参数为QQ/TIM号码;
+				第三个参数为图像分隔,支持多种状态
+				alt是图标旁留言(无图片显示)
+				title鼠标悬浮显示 
+	-->
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=459378261&site=11&meun=yes" target="_blank">
+		<img title="QQ交流" src="http://wpa.qq.com/pa?p=5:459378261:41" alt="QQ交流" border="0">
+	</a>
+    <!-- 
+		二:安全加密代码样例
+		1) IDKEY为个人鉴权KEY,请勿修改,否则无法发起临时会话.
+		2) 临时会话图标
+			src是图标链接,自定义图标中可以替换这一部分为自己图片的链接,
+			参数:
+				IDKEY为用户标识,请勿修改,否则将无法正确显示状态图片;
+				pic为图片风格,支持多种状态.
+				alt是图标旁留言(无图片时显示)
+				title鼠标悬浮显示 
+
+		3) 除了自定义图标需要修改 临时会话图标外,其他情况下建议不要修改代码,因为有可能导致在不同的环境和浏览器下,无法发起临时会话.
+
+		开通次功能的地址: "QQ在线状态" 网址为 http://wp.qq.com/index.html
+
+		
+	 -->
+    <a href="http://sighttp.qq.com/authd?IDKEY=48d1faedc69242691884407f29beb3abf466d239ac39ea65" target="_blank">
+		<img title="QQ交流" src="http://wpa.qq.com/imgd?IDKEY=48d1faedc69242691884407f29beb3abf466d239ac39ea65&pic=41&r=0.33950085957429327" alt="QQ交流" border="0" />
+	</a>
+	<!-- 在线咨询 QQ交谈  风格 -->
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=459378261&site=qq&menu=yes">
+		<img border="0" src="http://wpa.qq.com/pa?p=2:459378261:53" alt="点击" title="点击"/>
+	</a>
+
+    <!-- 一键加群 -->
+    <!-- 
+    	需要从QQ推广设置  http://shang.qq.com/v3/widget.html 
+    -->
+    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=a4cf9928c9cebae799bcfa2b17bdda20e1837566abd4dca66695c60b51e8c3c4">
+    	<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="老李家人" title="老李家人">
+    </a>
+
+
+
+</body>
+
+</html>
