@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>测试 keydown 事件</title>
+</head>
+
+<body>
+    <input type="text" name="" value="" placeholder="" onkeydown="onlyNum()">
+    <input type="text" onkeydown="return noNumbers(event)" />
+    <script language=javascript>
+    function onlyNum() {
+        console.log('click onlyNumb');
+    }
+
+    function noNumbers(e) {
+        var keynum
+        var keychar
+        var numcheck
+
+        // console.log(e);
+        if (window.event) // IE
+        {
+            keynum = e.keyCode
+            console.log(window.event);
+            console.log(e);
+        } else if (e.which) // Netscape/Firefox/Opera
+        {
+            keynum = e.which
+            console.log(e);
+        }
+
+        console.log(keynum);
+        // 获取到 code 码 , 0-9  96-105
+        // 将 0-9 数字code转成的 字符和 正则匹配
+        keychar = String.fromCharCode(keynum)
+        console.log(keychar);
+        numcheck = /\d/
+        //因为 0-9的 code 96-105  对应的 全是字符,所以正则不匹配
+        //当正则不匹配 说明就是数字 ,  则返回到 页面
+        return !numcheck.test(keychar)
+    }
+
+    // 页面加载完毕
+    window.onload = function() {
+        console.log('window onload');
+
+    }
+    </script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@
     <style>
     .first {
         width: 400px;
-        height: 100px;
+        height: 200px;
     }
 
     .first .input,
@@ -121,95 +121,33 @@
         content: '';
         display: table;
     }
-
-    table {
-        border: 1px solid;
-        width: 200px;
-    }
-    td {
-        border: 1px solid #c1dad7;
-        padding: 6px 6px 6px 12px;
-        color: #4f6b72;
-        text-align: center;
-        width: 150px;
-    }
-
-
-    /*
-        业务需求 , 没有 td的时候也需要 有分隔线
-        ????????????????? 失败
-     */
-    /*.table:before{
-        content: '';
-        position: absolute;
-        width: 25%;
-        left: 25%;
-        height: 100%;
-        border-left: 1px solid #ddd8ce;
-        border-right: 1px solid #ddd8ce;
-    }
-    .table:after{
-        content: '';
-        position: absolute;
-        width: 10%;
-        left: 75%;
-        height: 100%;
-        border-left: 1px solid #ddd8ce;
-        border-right: none;
-    }*/
-
-    /* tab-change */
-    .tab-change{
-        width: 200px;
-        height: 100px;
-        background: cyan;
-    }
-    .tab-change label{
-        width: 100px;
-        height: 50px;
-        border: 1px;
-    }
-    input, .tab-content{
-        display: none;
-        /* 用来标明 是否允许浏览器在单词内进行断句,这是为了防止当一个字符串矿长而找不到它的自然断句点时产生溢出现象 */
-        word-wrap: break-word;
-        /* 用来标明怎么样进行单词内的断句 */
-        word-break: break-all;
-        /* */
-        overflow-wrap: break-word;
-    }
-    #tab1:checked ~ #content1,
-    #tab2:checked ~ #content2 {
-        display: block;
-    }
-
     </style>
 </head>
 
 <body>
     <div class="first">
         <!-- 
-            一个评论框,后面的按钮有点赞或者发送评论两种状态,其中发送按钮有根据输入框中是否有字分为可点击和不可点击两种状态.
+			一个评论框,后面的按钮有点赞或者发送评论两种状态,其中发送按钮有根据输入框中是否有字分为可点击和不可点击两种状态.
 
-            需求:
-                没有文字,没有聚焦 - 点赞
-                没有文字,聚焦 - 灰色发送
-                有文字 - 红色发送
+			需求:
+				没有文字,没有聚焦 - 点赞
+				没有文字,聚焦 - 灰色发送
+				有文字 - 红色发送
 
-                如果用JS实现,需要监听输入框的change和focus事件,比较麻烦.
-                但是用CSS中的伪类就可以实现相近效果.
-         -->
+				如果用JS实现,需要监听输入框的change和focus事件,比较麻烦.
+				但是用CSS中的伪类就可以实现相近效果.
+		 -->
         <input type="text" class="input" required>
         <div class="like">点赞</div>
         <div class="send">发送</div>
         <!-- 
-            contenteditable 属性的 div 的 placeholder
+		 	contenteditable 属性的 div 的 placeholder
 
-            因为一些原因,我们有时候用带有 contenteditable 属性的 div 而不是 input 或者  textarea 来作为输入框. 
-            比如, div 可以根据内容自动调整高度. 
-            但是 div 元素不支持 placeholder 属性. 
-            怎么在 div 内容为空的时候显示一个默认文字呢? 可以利用 :empty 伪类
-          -->
+		 	因为一些原因,我们有时候用带有 contenteditable 属性的 div 而不是 input 或者  textarea 来作为输入框. 
+		 	比如, div 可以根据内容自动调整高度. 
+		 	但是 div 元素不支持 placeholder 属性. 
+		 	怎么在 div 内容为空的时候显示一个默认文字呢? 可以利用 :empty 伪类
+		  -->
         </br>
         <div class="input" contenteditable placeholder="请输入文字"></div>
     </div>
@@ -259,75 +197,40 @@
     </div>
     <!-- 画格子 -->
     <!-- 
-        美团 移动端页面 
+    	美团 移动端页面 
 
-        我们需要在城市列表这个区域画一个格子, 我们当然首先想到的是用 border 属性,但是设计师有个要求是, 如果最后一行只有一个或者两个城市, 为了美观后面也要有空白的格子
+    	我们需要在城市列表这个区域画一个格子, 我们当然首先想到的是用 border 属性,但是设计师有个要求是, 如果最后一行只有一个或者两个城市, 为了美观后面也要有空白的格子
     -->
     <!-- 
-        美团的页面中, 格子的竖线 用 ::after 和 ::before 元素画
+    	美团的页面中, 格子的竖线 用 ::after 和 ::before 元素画
      -->
     <!-- table 插入 位置 -->
-    <!-- ????????????????????????????????????? -->
-    <table class="table">
-        <caption>table title and/or explanatory text</caption>
-        <tbody>
-            <tr>
-                <td>北京</td>
-                <td>上海</td>
-                <td>广州</td>
-                <td>深圳</td>
-            </tr>
-            <tr>
-                <td>天津</td>
-                <td>西安</td>
-                <td>重庆</td>
-                <td>杭州</td>
-            </tr>
-            <tr>
-                <td>南京</td>
-                <td>武汉</td>
-            </tr>
-        </tbody>
-    </table> 
 
-    <!-- Tab 切换 -->
-    <!-- 
-        纯CSS实现Tab切换也是可以的. 主要是利用了单选框元素的 :checked 伪类和相信选择器 
-
-        因为是单选框,所以保证了同一时间只有一个tab处于激活状态. 
-
-        如果不要求更复杂的效果, 这个纯CSS实现的tab切换效果, 要比JS简单可靠很多
-    -->
-
-    <div class="tab-change">
-        <input id="tab1" type="radio" name="tabs" checked>
-        <label for="tab1">TAB1</label>
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2">TAB2</label>
-
-        <div id="content1" class="tab-content">CONTENT111111111111111111111111</div>
-        <div id="content2" class="tab-content">CONTENT222222222222222222222222</div>
-    </div>
 
     <script>
     var citys = ['北京', '上海', '广州', '深圳', '天津', '西安', '重庆', '杭州', '南京', '武汉'];
-    window.onload = function() {
-        // getElementsByTagName() 方法返回元素的顺序是它们在文档中的顺序。
+    window.onload = function(){
+    	// getElementsByTagName() 方法返回元素的顺序是它们在文档中的顺序。
         // var  = document.getElementsByTagName('table');
-        var tempTable = document.createElement('table');
-        for (var i = 0; i < citys.length; i++) {
-            tempTable.appendChild(createTr(citys[i]))
+        let tempTable = document.createElement('table');
+        console.log(tempTable)
+
+        for(let i =0;i<citys.length;i++){
+        	// 先创建 tr
+        	let tempTr = document.createElement('tr');
+        	// 0 1 2 3
+        	if((i+1)%4==0) {
+        		// 每行 append 一次
+		        tempTable.appendChild(tempTr);
+        	}
+	        let tempTd = document.createElement('td');
+	        tempTd.innerText = citys[i];
+	        tempTr.appendChild(tempTd);
         }
-        var body = document.getElementsByTagName('body')[0];
-        // body.appendChild(tempTable);
-    }
-    //  创建tr
-    var createTr = function(str) {
-        var td = document.createElement('td');
-        td.innerText = str;
-        var tr = document.createElement('tr');
-        tr.appendChild(td);
-        return tr;
+        let body = document.getElementsByTagName('body')[0];
+        body.appendChild('tempTable')
+
+
     }
     </script>
 </body>

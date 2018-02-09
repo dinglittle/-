@@ -1,0 +1,40 @@
+{
+	//name 必须字段, 
+	//1.不要在 name 中包含 js , node 字样;
+	//2.这个名字最终会是  URL 的一部分, 命令行的参数 , 目录名, 所以不能以点号或下划线开头;
+	//3.这个名字可能在 require() 方法中被调用,所以应该尽可能短
+	"name": "credit-web-client",
+	//首页,可选字段，没有 http://等带
+	"homepage":"https://github.com/nimojs/gulp-book",
+	//版本,必须字段
+	"version":"0.0.1",
+	//描述,可选字段,必须是字符串.npm search 的时候会用到
+	"description":"",
+	//main,可选字段.这个字段的值是你程序主入口的  模块的ID .
+	//如果其他用户需要你的包,当用户调用 require() 方法时,返回的就是这个模块的导出(exports)
+	"main":"gulpfile.js",
+	//license 可以选字段 
+	"license":"MIT",
+	//开发依赖  可选字段,如果只需要下载某些模块,而不下载这些模块的测试和文档框架, 放在这个下面比较不错
+	"devDependencies":{
+		"gulp":"^3.8.11",
+		"gulp-uglify":"^1.1.0"
+	},
+	//scripts 可选字段,Object. key是生命周期事件名, value是在事件点要跑的命令.
+	"scripts":{},
+	//config 可选字段, object
+	//config对象中的值 在 scripts 的整个周期中皆可用,专门用于给 scripts 提供配置参数
+	//可选,用来显示 代码存放的位置
+	"repository":{
+		"type":"git",
+		"url":"http://172.16.4.201//credith5/credit-web-client.git"
+	},
+	//author 可选 作者 署名
+	"author":{
+		"name":"lwj",
+		"email":"xxx.com",
+		"url":"http://xxx.com"
+	},
+	
+	
+}
