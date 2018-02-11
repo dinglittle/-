@@ -159,12 +159,12 @@
     }*/
 
     /* tab-change */
-    .tab-change{
+    .tab-change,.tab-change2{
         width: 200px;
         height: 100px;
         background: cyan;
     }
-    .tab-change label{
+    .tab-change label,.tab-change2 label{
         width: 100px;
         height: 50px;
         border: 1px;
@@ -182,6 +182,30 @@
     #tab2:checked ~ #content2 {
         display: block;
     }
+
+    /* 感知子元素的个数 */
+    /*
+        :nth-last-child(n+4); 这一个选择器的意思就是倒数第四个以及之前的元素,后面加了 ~ li, 就是表示符合前面条件的元素之后 的 li 元素.
+
+        如果元素总数不足4 , 则不会存在符合 :nth-last-child(n+4); 的元素(一共没有四个,也就不存在在倒数第四个) , 那么 li:nth-last-child(n+4) ~ li; 就不会选择任何的元素了
+
+        但是如果只用 ~ li, 是不会匹配到第一个 li 的, 所以又加上了 li:nth-lash-child(n+4):first-child;
+     */
+    /*ul li:nth-last-child(n+15) ~ li,
+    ul li:nth-last-child(n+15):first-child
+    {
+        color:red;
+    }*/
+    
+    /* 
+        条数 大于 9 改变颜色
+        第一条 也变
+    */
+    ul li:nth-child(n+4) ~li,
+    ul li:first-child{
+        color:red;
+    }
+
 
     </style>
 </head>
@@ -298,6 +322,9 @@
 
         如果不要求更复杂的效果, 这个纯CSS实现的tab切换效果, 要比JS简单可靠很多
     -->
+    <!-- 
+        因为 input#table 和 label tab1 是绑定的,所以 点击  label 对应的 input 也会选中
+     -->
 
     <div class="tab-change">
         <input id="tab1" type="radio" name="tabs" checked>
@@ -308,6 +335,53 @@
         <div id="content1" class="tab-content">CONTENT111111111111111111111111</div>
         <div id="content2" class="tab-content">CONTENT222222222222222222222222</div>
     </div>
+    <div class="tab-change2">
+        <input type="checkbox" id="tab1">
+        <label for="tab1">tab1</label>
+        <input type="checkbox" id="tab2">
+        <label for="tab2">tab2</label>
+        <div id="content1" class="tab-content">CONTENT1111111111sdfsdf11111111111111</div>
+        <div id="content2" class="tab-content">CONTENT2222222222sdfsdfsfd22222222222222</div>
+    </div>
+
+
+
+    <!-- 感知子元素的个数 -->
+    <div>
+        <!-- 
+            不依靠JS实现了根据子元素的个数来应用不同的样式 
+        -->
+        <!-- 
+            .list li:nth-last-child(n+4) ~ li,
+            .list li:nth-last-child(n+4):first-child {
+                color: red
+            }
+
+            可以实现这样的效果: 如果 .list 里面 li 元素个数大于等于4, 则显示为红色
+
+            :nth-last-child(n+4) 这一个选择器的意思就是倒数第四个以及之前的元素, 
+                                 后面加了 ~ li , 就是表示符合前面条件的元素之后的 li 元素
+
+            如果元素总数不足4, 则不会存在符合 :nth-last-child(n+4) 的元素(一共没有四个 ,也就不存在倒数第四个), 那么 li:nth-last-chidl(n+4) ~ li 就不会选择任何的元素了
+
+            但是如果只用 ~ li , 是不会匹配到第一个 li 的, 所以又加上了 li:nth-last-child(n+4):first-child
+
+            这样也就实现了根据元素个数的多少来应用不的样式
+         -->
+
+         <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+         </ul>
+    </div>  
 
     <script>
     var citys = ['北京', '上海', '广州', '深圳', '天津', '西安', '重庆', '杭州', '南京', '武汉'];
