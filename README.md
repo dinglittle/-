@@ -1,3 +1,7 @@
+# demo
+- [jquery-qrcode 二维码生成](./jquery-qrcode/index.html)
+
+
 # 收集
 ---
 ### 2017-5-18 前端日报
