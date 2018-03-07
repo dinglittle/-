@@ -1,0 +1,12 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+div{
+	/*border: 1px solid;*/
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 20px;
+}

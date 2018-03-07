@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="name" content="content" charset="utf-8">
+    <title>jquery-qrcode 二维码</title>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.qrcode.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 1.创建一个 div 用来展示 二维码 -->
+    <div id="qrcode">
+    </div>
+    <div id="qrcode1">
+    </div>
+    <script>
+    	// 这个方法 为中文
+    function utf16to8(str) {
+        var out, i, len, c;
+        out = "";
+        len = str.length;
+        for (i = 0; i < len; i++) {
+            c = str.charCodeAt(i);
+            if ((c >= 0x0001) && (c <= 0x007F)) {
+                out += str.charAt(i);
+            } else if (c > 0x07FF) {
+                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            } else {
+                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+            }
+        }
+        return out;
+    }
+    // jquery('#qrcode').qrcode("this plugin is great");
+    // 不支持 中文  charCodeAt() 编码
+    $('#qrcode').qrcode({
+        width: 100,
+        height: 100,
+        // text: "http://dinglittle.github.io",
+        text: 'http://mp.weixin.qq.com/s/tLWnZT6kd_5aI1mc55CXWA'
+    });
+    // let utfurl = utf16to8($('#qrcode1'));
+    $('#qrcode1').qrcode({
+    	width:100,
+    	height:100,
+    	text: utf16to8('你好 ,峰峰同学')
+    })
+    </script>
+</body>
+
+</html>
