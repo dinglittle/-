@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object.defineProperty</title>
+	<!-- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty -->
+</head>
+<body>
+	<script>
+		/*
+			Object.defineProperty(obj, prop, descriptor)
+			
+			参数:
+				obj: 要在其上定义属性的对象
+
+				prop: 要定义或修改的属性的名称
+
+				descriptor: 将被定义或修改的属性描述符
+
+			返回数:
+				被传递给函数的对象
+
+			ES6:
+				在 ES6 中,由于 Symbol 类型的特殊性, 用 Symbol 类型的值来做对象的 key 与常规的定义或修改不同, 而 Object.defineProperty  是定义 key 为 Symbol 的属性的方法之一.
+		 */
+		/*
+			https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+			如果对象中不存在指定的属性, Object.defineProperty() 就创建这个属性. 当描述符中省略某些字段时, 这些字段将使用它们的默认值. 拥有布尔值的字段默认值都是 false.
+
+			value , get 和 set 字段默认值为 undefined , 一个没有 get/set/value/writable 定义的属性称为 "通用的", 并被 "键入" 为一个数据描述符
+		 */
+		
+		var o = {};// 创建一个新对象
+
+		// 在对象中添加一个属性与数据描述符的示例
+		Object.defineProperty(o,"a",{
+			value: 37,
+			writable: true,
+			enumerable: true,
+			configurable: true
+		});
+
+		// 对象 o 拥有了属性a, 值为 37
+		
+		// 在对象中添加一个属性与存取描述符的示例
+		var bValue;
+		Object.defineProperty(o,"b",{
+			get:function(){
+				return bValue;
+			},
+			set:function(newValue){
+				bValue = newValue;
+			},
+			enumerable: true, // 是否可枚举 默认false
+			configurable: true // 是否可被改变 默认false
+		})
+		o.b = 38;
+		// 对象 o  拥有了属性b , 值为 38
+		
+		// o.b 的值瑞 在总是与 vValue 相同, 除非重新定义 o.b
+		
+		// 数据描述符和存取描述符不能混合使用
+		
+		Object.defineProperty(o,"conflict",{
+			//  这里 数据描述 和 存取描述不能混合使用,否则报错
+			//  Uncaught TypeError: Invalid property descriptor. Cannot both specify accessors and a value or writable attribute
+			//  无效的属性描述符. 不能同时 指定访问器和值或可写属性
+			value: 0x9f91102,
+			get: function(){
+				return 0xdeadbeef;
+			}
+		})
+
+	</script>	
+</body>
+</html>
