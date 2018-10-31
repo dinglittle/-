@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test Vue</title>
+    <link rel="stylesheet" href="">
+    <script src="./myVue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+       这里是自定义的 Vue 构造器
+    </div>
+    <script>
+    let app = new Vue({
+        data: {
+            test: '旧值'
+        }
+    })
+    // 自己调用 触发 set方法
+    console.log('未更新',app._data.test)
+    app._data.test ='新值'
+    
+    </script>
+</body>
+
+</html>
