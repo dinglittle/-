@@ -2,7 +2,7 @@
 
 为了把 Vue.js 的源码讲明的, 课程设计成由浅入深, 分为核心、编译、扩展、生态四个方面去讲，并拆成了八个章节
 
-[img](https://ustbhuangyi.github.io/vue-analysis/assets/mind.png)
+![img](https://ustbhuangyi.github.io/vue-analysis/assets/mind.png)
 
 - 准备工作
 	- 认识 Flow
