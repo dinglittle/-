@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单下拉数据过大时,该如何应对?</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<el-select class="remoteSelect" v-scroll v-model="value">
+			<el-option v-for="item in list" :key="item.id">
+				{{item.value}}
+			</el-option>
+		</el-select>
+	</div>
+	<script>
+		let app = new Vue({
+			el:'#app',
+			data:{
+				list:[{id:1,value:1}]
+			}
+			directives:{
+				// 
+				scroll(el,binding){
+					// 获取滚动页面
+					let SCROLL_DOM = el.querySelector('.el-select-dropdown .el-select-dropdown__wrap')
+					// 通过一个公共变量来记录全局位置, 通过 scrollTop 方法获取当前的滚动位置, 并记录在公共变量 scrollPosition 里
+					let scrollPosition = 0;
+					SCROLL_DOM.addEventListener('scroll',function(){
+						console.log('scroll')
+						// 当前的滚动位置 - 上一次的滚动位置
+						// 如果为 true 代码向上滚动, false 代码向下滚动
+						let flagToDirection = this.scrollTop - scrollPosition > 0;
+						// 记录当前的滚动位置
+						scrollPosition = this.scrollTop
+						console.log(flagToDirection?'滚动方向:下':'滚动方式:上')
+					})
+				}
+			}
+		})
+	</script>
+</body>
+</html>

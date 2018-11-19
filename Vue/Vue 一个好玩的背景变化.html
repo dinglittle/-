@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue 一个好玩的背景变化</title>
+    <script src="./vue.js"></script>
+    <style>
+    .bg {
+        width: 100vh;
+        height: 300px;
+        font-size: 30px;
+        /* 样式动态变化  平滑*/
+        transition: 0.1s background-color ease;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .post-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .child5,
+    .child6 {
+        border: 1px solid #000;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 
+		https://css-tricks.com/intro-to-vue-1-rendering-directives-events/
+
+		HSL 同 RGB 两种色彩空间
+		HSL 更符合人类的直观感觉, 比如人一般表单一个颜色会这样说: 有点浓的暗红色, 而不会说 红色占多少,绿色占多少,蓝色占多少
+
+		backgroundColor: `hsl(${x},80%,50%)`
+		这里
+			样式		用驼峰式
+			表达式	用 ``  {} 包裹
+			变量		用 ${x} 解析
+	 -->
+    <div id="app">
+        <div class="bg" :style="{ backgroundColor: `hsl(${x},80%,50%)`}" @mousemove="xCoordinate">
+            <p>
+                Pixels across:{{x}}
+            </p>
+            <p>
+                ClientX:{{clientX}} ClientY:{{clientY}}
+            </p>
+        </div>
+        <p class="title">
+            事件绑定
+        </p>
+        <div>
+            <button @click="counter+=1">+</button>
+            counter: {{counter}}
+            <button @click="counter>0?counter-=1:0">-</button>
+        </div>
+    </div>
+    <script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                x: 0,
+                clientX: 0,
+                clientY: 0,
+                counter: 0,
+            }
+        },
+        methods: {
+            xCoordinate(e) {
+                // clientX 事件属性返回档事件被触发时鼠标指针相对于浏览器页面(活客户区)的水平坐标.
+                this.x = e.clientX;
+                this.clientX = e.clientX;
+                this.clientY = e.clientY;
+            }
+        }
+    })
+    </script>
+</body>
+
+</html>
