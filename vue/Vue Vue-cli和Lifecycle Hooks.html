@@ -16,6 +16,19 @@
 	 	vue init webpack <project-name>
 	 	// 启动
 	 	npm run dev
+
+	 	这里开始遇到 .vue 文件 , 这时我们不再需要包装我们的模板 
+	 	<script type="text/x-template"> 
+
+	 	脚本用 export default 编写
+
+	 	样式用 scoped , 我们可以非常轻松的将此组件的样式范围仅限制于此组件
+	 	在 vue-style-loader 的帮助下将样式放入 App.vue 文件的标记中
+
+	 	import New from './components/New.vue'
+	 	将组件导入/导出到文件中的最基本方法
+
+
 	  -->
 	<div id="app">
 		
@@ -26,5 +39,79 @@
 
 		})
 	</script>
+
+	<!-- 
+		生命周期
+		https://cn.vuejs.org/v2/api/index.html#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90
+
+			beforeCreate
+				在实例初始化之后, 数据观测 (data observer) 和 event/watcher 事件配置之前被调用
+
+			created
+				在实例创建完成后被立即调用. 在这一步, 实例已经完成以下的配置:
+					数据观测 (data observer)
+					属性和方法的运算
+					watch/event 事件回调
+				然而,挂载阶段还没开始 , $el 属性目前不见
+
+			beforeMount
+				在挂载开始之前被调用,相关的 render 函数首次被调用
+
+				该钩子在服务器渲染期间不被调用
+
+			mounted
+				el 被新创建的 vm.$el 替换, 并挂载到实例上去之后调用该钩子. 如果 root 实例挂载了一个文档内元素, 当 mounted 被调用时 vm.$el 也在文档内.
+
+				mounted 不会承诺所有的子组件也都一起呗挂载.
+				如果你希望当道整个视图都渲染完毕, 可以用个 vm.$nextTick 替换掉 mounted
+
+				mounted:function(){
+					this.$nextTick( function(){
+	
+					})
+				}
+
+				改钩子 在服务器daunt渲染期间不被调用
+
+			beforeUpdate
+				数据更新时调用, 发送在虚拟 DOM 打补丁之前. 这里适合在更新之前访问现有的 DOM , 比如 手动移除已添加的事件监听器 
+
+				该钩子在服务器端渲染期间不被调用, 因为只有初次渲染会在服务选进行
+
+			updated
+				由于数据更改导致的虚拟 DOM 更新渲染和打补丁,在这之后会调用该钩子
+
+				当这个钩子被调用时, 组件 DOM 已经更新, 所以现在可以执行依赖于 DOM 的操作,应该避免在此期间更改状态. 
+				
+				如果要相应状态改变, 通常最好使用 计算属性 或者  watcher 取而代之
+
+				updated 不会承诺所有的子组件也都一起被重绘. 如果你希望等到整个视图都重绘完毕, 可以用 vm.$nextTick 替换掉 updated 
+
+				该钩子在服务器端渲染期间不被调用
+
+			activated
+
+				keep-alive 组件激活时调用
+
+				该钩子在服务器端渲染期间不被调用
+
+			deactivated
+
+				keep-alive 组件停用时调用
+
+				该钩子在服务器端渲染期间不被调用
+
+			beforeDestroy
+
+				实例销毁之前调用, 在这一步, 实例仍然 完全可用 
+
+				该钩子在服务器端渲染期间不被调用
+
+			destroyed
+
+				Vue 实例销毁后调用. 调用后, Vue 实例指示的所有东西都会解绑定, 所有的事件监听器会被移除, 所有的子实例也会被销毁
+
+				该钩子在服务器端渲染期间不被调用
+	 -->
 </body>
 </html>
