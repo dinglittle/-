@@ -83,7 +83,8 @@
     <p>
       {{counter}}
       <button @click="minus">-</button>
-      <button @click="goTest">goTest</button>
+      <button @click="goMutation">goMutation</button>
+      <button @click="goAction">goAction</button>
       
     </p>
   </div>
@@ -111,14 +112,20 @@ export default {
   // 
   // 获取多个状态 通过 mapState
   computed:mapState({
-    counter:state=>state.counter
+    // counter:state=>state.counter
+    counter:function(state){
+      return state.counter;
+    }
   }),
   mounted(){
     console.log('hello mounted')
   },
   methods:{
-    goTest(){
-      this.$router.push('/test')
+    goMutation(){
+      this.$router.push('/mutation')
+    },
+    goAction(){
+      this.$router.push('/action')
     },
     minus(){
       this.$store.commit('minus',1)
