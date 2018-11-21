@@ -82,6 +82,30 @@ export const store = new Vuex.Store({
     },
     incrementAction({commit}){
     	commit('incrementAction')
+    },
+    // 分发 Action , Action 可以执行异步操作
+    // 这里需要 用 载荷方式分发
+    // store.dispatch('incrementAsync',{ amount:10 })
+    // store.dispatch({ type:'incrementAsync', amount:10 })
+    incrementAsync({commit}){
+    	setTimeout(()=>{
+    		commit('increment')
+    	},3000)
+    },
+    // 实际购物车示例，涉及到 调用异步 API 和 分发多重 mutation
+    checkout({commit,state},products){
+    	// 把当前购物车的物品备份起来
+    	const savedCartItems = [...state.cart.added]
+    	// 发出结账请求，然后乐观地清空购物车
+    	commit(types.CHECKOUT_REQUEST)
+    	// 购物车 API 接受一个成功回调和一个失败回调
+    	shop.buyProducts(
+    		products,
+    		// 成功操作
+    		()=>commit(types.CHECKOUT_SUCCESS),
+    		// 失败操作
+    		()=>commit(types.CHECKOUT_FAILURE, savedCartItems)
+    	)
     }
   }
 })

@@ -29,10 +29,16 @@ export default {
       this.$router.push('/')
     },
     incrementAction() {
+    	// 方法一： 正常方式更改状态
       this.$store.commit('incrementAction')
     },
     minuAction(){
-    	this.$store.commit('minuAction')
+    	// 载荷分发方式
+    	// 方法一： 正常方式更改状态
+    	// this.$store.commit('minuAction')
+    	// 方式二：以载荷方式分发处理 
+    	this.$store.dispatch('incrementAsync');
+    	
     }
   }
 }
