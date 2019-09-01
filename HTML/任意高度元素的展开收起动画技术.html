@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>任意高度元素的展开收起动画技术</title>
+    <style type="text/css" media="screen">
+    
+    input {
+        display: none;
+    }
+
+    .normal {
+        max-height: 0;
+        width: 300px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    :checked~.normal {
+        max-height: 666px;
+    }
+
+    /*
+    	~ 同级选择
+     */
+
+
+    /* 练习样式 */
+    .test-normal {
+        max-height: 0;
+        width: 300px;
+        overflow: hidden;
+        transition: max-height 0.2s;
+    }
+
+
+	/* 通过 checked 来处理 更多/收起 的显示 */
+    :checked~.test-normal {
+        max-height: 666px;
+    }
+    .less{
+    	display: none;
+    }
+    :checked~.more{
+    	display: none;
+    }
+    :checked~.less{
+    	display: block;
+    }
+
+    /*:display;*/
+    </style>
+</head>
+
+<body>
+    <!-- https://demo.cssworld.cn/3/3-2.php -->
+    <!-- 
+		利用 max-height
+
+		max-height  默认 none
+
+		通过 checkbox 绑定 label 
+
+		伪类 :checked ~ .normal
+		checked 状态 控制 样式
+	 -->
+    <!-- 伪类是 基于当年元素处于的状态  重点是状态 ,或者说元素当前所具有的特性 -->
+    <input id="check" type="checkbox">
+    <p>这里是少数内容</p>
+    <div class="normal">
+        这里是更多内容...这里是更多内容...这里是更多内容...
+    </div>
+    <div class="normal">
+    </div>
+    <label for="check" class="check-in">更多-></label>
+    <p></p>
+    <p>----------</p>
+    <p>----------</p>
+    <p>练习内容</p>
+    <input type="checkbox" id="checkTest" name="">
+    <p>第一段内容....</p>
+    <div class="test-normal">这里是更多内容.....这里是更多内容.....这里是更多内容.....这里是更多内容.....这里是更多内容.....这里是更多内容.....这里是更多内容.....这里是更多内容.....</div>
+    <label for="checkTest" class="more">更多----</label>
+    <label for="checkTest" class="less">收起----</label>
+</body>
+
+</html>

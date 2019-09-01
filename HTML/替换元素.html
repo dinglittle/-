@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>替换元素</title>
+</head>
+<body>
+	<h2>替换元素:</h2>
+	<p>
+		1. 可替换 , 通过修改某个属性值程序的内容就可以被替换, image object video iframe
+	</p>
+	<p>
+		1) 内容的外观不受页面上的 CSS 影响.
+	</p>
+	<p>
+		2) 有自己的尺寸.  video iframe canvas 默认 300 x 150, image 0 x 0
+	</p>
+	<video autobuffer autoloop loop controls>
+		<source src="/media/video.oga">
+		<source src="/media/video.m4v">
+		<object type="video/ogg" data="/media/video.oga" width="320" height="240">
+		<param name="src" value="/media/video.oga">
+		<param name="autoplay" value="false">
+		<param name="autoStart" value="0">
+		<p><a href="/media/video.oga">Download this video file.</a></p>
+		</object>
+	</video>
+	<canvas>
+		
+	</canvas>
+	<iframe></iframe>
+
+	<p>
+		3) 在很多 CSS 属性上有自己的一套表现规则.
+	</p>
+
+	<div>
+		eg: select 是替换元素, 内容可替换; 基本样式外部 CSS 很难改变; 它有自己的尺寸;
+	</div>
+
+	<p>
+		2. 替换元素的默认 display 大部分 inline-block ,  Firefox 浏览器在 textarea 和 绝大多数类型的 input 元素上是 line 而不是 inline-block 
+	</p>
+	<code>
+		<input type="button" value="按钮">
+		<button type="button">按钮</button>
+	</code>
+	<div>
+		input type="button"  和 button 按钮 前者 inline 后者 inline-block
+	</div>
+
+	<p>
+		3. 替换元素的尺寸元素计算规则
+	</p>
+	
+
+</body>
+</html>

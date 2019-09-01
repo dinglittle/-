@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Vue.js介绍</title>
+</head>
+<body>
+	<!-- 
+		npm install vuex 运行依赖 装在 dependencies
+
+
+
+		scr -> store -> store.js
+
+			import Vue from 'vue'
+			import Vuex from 'vuex'
+
+			Vue.use(Vuex)
+
+			export const store = new Vuex.Store({
+				state:{
+					key:value
+				}
+			})
+			// key:value 是任何类型的状态数据的占位符
+		
+		main.js
+			import { store } from './store/store';
+
+			new Vue({
+				store: store
+			})
+
+
+			Getters 将使值能够在我们的目标模板中静态显示. 
+					换句话说, getter 可以读取值, 但不会改变状态
+
+			突变 将允许我们更新状态, 但他们将始终是同步的. 
+					变异是在商店中更改状态数据的唯一方法.
+
+			动作 将允许我们异步更新状态, 但将使用现有的变异. 
+					如果需要以特定顺序一次执行一些不同的突变, 这可能非常有用.
+
+			
+
+	 -->
+
+</body>
+</html>

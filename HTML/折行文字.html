@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>折行文字</title>
+    <style type="text/css" media="screen">
+    .sign-line {
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .double-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /*折叠行*/
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        width: 150px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="sign-line">
+        测试单折行测试单折行测试单折行测试单折行测试单折行测试单折行
+    </div>
+    <p></p>
+    <div class="double-line">
+        测速折行文字测速折行文字测速折行文字测速折行文字
+    </div>
+</body>
+
+</html>
