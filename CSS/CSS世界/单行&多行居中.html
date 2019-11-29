@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>单行&多行居中</title>
+  <style>
+    .div {
+      width: 280px;
+      height: 100px;
+      line-height: 120px;
+      background-color: #f0f3f9;
+      margin: auto;
+      border: 1px solid;
+    }
+
+    .content1 {
+      line-height: inherit;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .content2 {
+      display: inline-block;
+      line-height: 20px;
+      margin: 0 20px;
+      text-align: left;
+      vertical-align: middle;
+
+      overflow-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div">
+    <div class="content1">
+
+      单行居中单行居中单行居中单行居中单行居中 ======
+    </div>
+  </div>
+  <div class="div">
+    <div class="content2">
+
+      多行居中 多行居中多行居中多行居居中多行居居中多行居居中多行居居中多行居中多行居中多行居中
+    </div>
+  </div>
+</body>
+
+</html>
